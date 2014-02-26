@@ -12,4 +12,7 @@ all:
 lib:
 	(cd bamtools && mkdir -p build && cd build && cmake .. && make)
 
+clean:
+	-rm -f *.o *.so *.py *.cxx
+
 .PHONY: all clean lib
