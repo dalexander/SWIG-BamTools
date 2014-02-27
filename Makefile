@@ -4,16 +4,16 @@ lib:
 	(cd bamtools && mkdir -p build && cd build && cmake .. && make)
 
 python: 
-	cd Python && make python
+	cd Python && make 
 
 clean-python:
-	cd Python && make clean-python
+	cd Python && make clean
 
 csharp: 
-	cd CSharp && make csharp
+	cd CSharp && make 
 
 clean-csharp:
-	cd CSharp && make clean-csharp
+	cd CSharp && make clean
 
 clean: clean-python clean-csharp
 

@@ -1,7 +1,7 @@
 ROOT_DIR := $(dir $(lastword $(MAKEFILE_LIST)))
 
 
-CXX := g++ -g
+CXX := g++ -fPIC -g
 BAMTOOLS_INCLUDE := $(ROOT_DIR)/bamtools/include
 BAMTOOLS_LIB := $(ROOT_DIR)/bamtools/lib
 SWIG_INTERFACE := $(ROOT_DIR)/BamTools.i
