@@ -35,4 +35,7 @@
     <Compile Include="CSharp\gensrc\*.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="BeforeBuild">
+    <Exec Command="make before-xbuild" />
+  </Target>
 </Project>
