@@ -45,3 +45,7 @@ using namespace BamTools;
 %include "api/BamAlignment.h"
 %include "api/BamIndex.h"
 %include "api/BamReader.h"
+
+namespace BamTools {
+    %template(CigarOpVector) ::std::vector<BamTools::CigarOp>;
+ }

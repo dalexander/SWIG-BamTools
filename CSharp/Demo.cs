@@ -13,6 +13,8 @@ public class Demo
        {
            reader.GetNextAlignment(aln);
            Console.WriteLine("{0} {1}", aln.Name, aln.Length);
+
+           var foo = aln.CigarData[0];
        }
    }
 }
