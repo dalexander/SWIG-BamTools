@@ -1,0 +1,10 @@
+*.so
+*.o
+*.dll
+*.exe
+*.mdb
+CSharp/BamTools_wrap.cxx
+Python/BamTools.py
+Python/BamTools_wrap.cxx
+obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+obj/Debug/BamTools.csproj.FilesWrittenAbsolute.txt
