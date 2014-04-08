@@ -48,4 +48,5 @@ using namespace BamTools;
 
 namespace BamTools {
     %template(CigarOpVector) ::std::vector<BamTools::CigarOp>;
+    %template(RefDataVector) ::std::vector<BamTools::RefData>;
  }
