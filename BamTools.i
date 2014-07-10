@@ -20,6 +20,8 @@
 #include "api/BamReader.h"
 #include "api/BamIndex.h"
 
+#include "Extensions.hpp"
+
 using namespace BamTools;
 
 %}
@@ -51,3 +53,6 @@ namespace BamTools {
     %template(RefDataVector) ::std::vector<BamTools::RefData>;
     %template(StringVector)  ::std::vector<std::string>;
  }
+
+%include "Extensions.hpp"
+%include "Extensions.i"
