@@ -28,6 +28,8 @@ using namespace BamTools;
 
 #define API_EXPORT
 
+%ignore *::operator[];
+
 %include "std_string.i"
 %include "std_vector.i"
 %include "std_map.i"
@@ -49,9 +51,13 @@ using namespace BamTools;
 %include "api/BamReader.h"
 
 namespace BamTools {
-    %template(CigarOpVector) ::std::vector<BamTools::CigarOp>;
-    %template(RefDataVector) ::std::vector<BamTools::RefData>;
-    %template(StringVector)  ::std::vector<std::string>;
+    %template(CigarOpVector)      ::std::vector<BamTools::CigarOp>;
+    %template(RefDataVector)      ::std::vector<BamTools::RefData>;
+    %template(StringVector)       ::std::vector<std::string>;
+    %template(SamReadGroupVector) ::std::vector<BamTools::SamReadGroup>;
+    %template(SamSequenceVector)  ::std::vector<BamTools::SamSequence>;
+    %template(SamProgramVector)   ::std::vector<BamTools::SamProgram>;
+
  }
 
 %include "Extensions.hpp"

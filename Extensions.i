@@ -54,3 +54,28 @@
     // }
 
 };
+
+
+%extend BamTools::SamReadGroupDictionary {
+    std::vector<BamTools::SamReadGroup>* ToList()
+    {
+        return new std::vector<BamTools::SamReadGroup>
+            ($self->ConstBegin(), $self->ConstEnd());
+    }
+}
+
+%extend BamTools::SamSequenceDictionary {
+    std::vector<BamTools::SamSequence>* ToList()
+    {
+        return new std::vector<BamTools::SamSequence>
+            ($self->ConstBegin(), $self->ConstEnd());
+    }
+}
+
+%extend BamTools::SamProgramChain {
+    std::vector<BamTools::SamProgram>* ToList()
+    {
+        return new std::vector<BamTools::SamProgram>
+            ($self->ConstBegin(), $self->ConstEnd());
+    }
+}
