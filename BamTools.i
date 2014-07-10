@@ -35,13 +35,13 @@ using namespace BamTools;
 %include "stdint.i"
 
 %include "api/SamConstants.h"
-%include "api/SamHeader.h"
 %include "api/SamReadGroup.h"
 %include "api/SamReadGroupDictionary.h"
 %include "api/SamSequenceDictionary.h"
 %include "api/SamSequence.h"
 %include "api/SamProgram.h"
 %include "api/SamProgramChain.h"
+%include "api/SamHeader.h"
 
 %include "api/BamAux.h"
 %include "api/BamAlignment.h"

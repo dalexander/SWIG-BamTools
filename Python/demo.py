@@ -32,3 +32,7 @@ except BamTools.BamToolsException as e:
 except Exception as f:
     # We come here ... unfortunately it doesn't get the exception type wrapped correctly
     print f
+
+
+h = r.GetHeader()
+rgs = h.ReadGroups
