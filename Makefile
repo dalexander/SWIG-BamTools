@@ -23,4 +23,8 @@ before-xbuild: csharp
 
 clean: clean-python clean-csharp
 
+clobber: clean
+	-rm -rf bamtools/bin/ bamtools/build/ bamtools/lib/
+
+
 .PHONY: all clean clean-python clean-csharp lib csharp python
